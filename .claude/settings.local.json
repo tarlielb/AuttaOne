@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(while read f)",
+      "Bash(do)",
+      "Bash(perl -pi -e:*)",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "Bash(sips:*)",
+      "Bash(convert:*)",
+      "Bash(find:*)",
+      "Bash(python3 -c \"import json; json.load\\(open\\(''$f''\\)\\)\")",
+      "Bash(python3:*)",
+      "Bash(do if python3 -m json.tool \"$f\")",
+      "Bash(then echo \"VALID: $f\" else echo \"INVALID: $f\" fi done)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(identify:*)",
+      "Bash(grep:*)",
+      "Bash(cd:*)",
+      "Bash(pnpm run build:*)",
+      "Bash(pnpm run vite:*)"
+    ]
+  }
+}
